@@ -4,7 +4,7 @@ from model import get_model
 X_train, y_train, X_test, y_test = get_data()
 model = get_model()
 
-hist = model.fit(
+history = model.fit(
     X_train,
     y_train,
     validation_split=0.2,

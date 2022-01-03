@@ -10,5 +10,4 @@ def get_model():
     model.add(Dense(1, activation='linear'))
 
     model.compile(optimizer='adam', loss='mse', metrics=['mae'])
-
     return model
