@@ -23,6 +23,7 @@ This dataset consists of 60,000 28x28 grayscale images of the 10 digits, along w
 ![](./MNISTdigitsGAN/generated_digits.png)
 
 Inspiration was taken from [this](https://machinelearningmastery.com/how-to-develop-a-conditional-generative-adversarial-network-from-scratch/) machinelearningmastery.com GAN tutorial.
+Hyperparameters were chosen by using the [GAN hacks](https://machinelearningmastery.com/how-to-code-generative-adversarial-network-hacks/) best practices.
 
 ## MNIST Digits Conditional GAN
 This dataset consists of 60,000 28x28 grayscale images of the 10 digits, along with a test set of 10,000 images. This dataset was used to train a conditional generative adversarial network which, similiar to the regular GAN, generates samples that resemble the handwritten digits in the dataset. The difference is that this conditional GAN can be told which digit to generate rather than just generating a random digit. The model is similiar to the conventional GAN but it also accepts a digit (0-9) to be generated as input. The model creates an embedding of the digit that it is meant to generate and then combines that embedding as another channel to the CNN. The following are some examples of specific digits that the generator learned to produce after 100 epochs of training:
@@ -30,3 +31,4 @@ This dataset consists of 60,000 28x28 grayscale images of the 10 digits, along w
 ![](./MNISTdigitsConditionalGAN/generated_digits.png)
 
 Inspiration was again taken from [this](https://machinelearningmastery.com/how-to-develop-a-conditional-generative-adversarial-network-from-scratch/) machinelearningmastery.com GAN tutorial.
+Hyperparameters were again chosen by using the [GAN hacks](https://machinelearningmastery.com/how-to-code-generative-adversarial-network-hacks/) best practices.
